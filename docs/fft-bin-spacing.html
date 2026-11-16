@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FFT 的頻率格距｜醫電訊號筆記</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header><div class="wrap"><a href="index.html">醫電訊號筆記</a></div></header>
+<main class="wrap"><article><p class="tag">頻域</p><h1>FFT 的頻率格距</h1><p class="lead">從取樣率與樣本數算出相鄰頻率格點的距離。</p><section><h2>核心觀念</h2><p>FFT 是計算離散傅立葉轉換的演算法。對 N 筆等間距樣本做 N 點轉換時，相鄰頻率格點距離為取樣率除以 N。</p></section><section><h2>手算例子</h2><p>以 256 Hz 取樣，取 128 筆做 128 點 FFT。記錄長度為 128 ÷ 256 = 0.5 秒，頻率格距為 256 ÷ 128 = 2 Hz。</p></section><section><h2>容易混淆的地方</h2><p>補零可以讓頻譜格點更密，但原本的觀測時間並未增加。相近成分能否分辨仍與觀測長度和窗函數有關。</p></section><section><h2>延伸閱讀</h2><ul><li><a href="https://numpy.org/doc/stable/reference/routines.fft.html">NumPy · Discrete Fourier Transform</a></li></ul></section></article><p><a href="index.html">← 返回筆記索引</a></p></main>
+<footer class="wrap">醫電所學習筆記 · 李宥辰</footer>
+</body>
+</html>
